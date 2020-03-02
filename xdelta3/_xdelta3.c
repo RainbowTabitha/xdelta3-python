@@ -36,6 +36,7 @@ static PyObject * xdelta3_execute(PyObject *self, PyObject *args)
         break;
       }
       output_alloc = output_alloc * 2;
+      main_free(output_buf);
     }
   }
 
